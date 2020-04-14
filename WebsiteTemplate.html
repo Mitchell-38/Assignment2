@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment-2</title>
+<style>
+<!--Tab Style-->
+body {
+	font-family: Calibri;
+	background-color: #e6f2ff;
+}
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #3399ff;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	font-family: Calibri;
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 14px;
+	transition: 0.3s;
+	font-size: 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+	background-color: #80bfff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #0073e6;
+}
+
+/* Style the tab content */
+.tabcontent {
+	background-color: #e6f2ff;
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openSection(event, 'Team ____')">Team ____</button>
+  <button class="tablinks" onclick="openSection(event, 'Project')">Project</button>
+  
+
+</div>
+<div id="Project" class="tabcontent">
+  <h3>Project</h3>
+  <p>This is our project.</p>
+</div>
+
+<div id="Team ____" class="tabcontent">
+	<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<h3>This is our team profile.</h3>
+</div>
+
+<div id="Mitchell" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<p>Mitchell.</p>
+	<a href = "https://mitchell-38.github.io/Assignment-1">Website</a>
+</div>
+
+<div id="Tim" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<p>Tim.</p>
+	<a href = "https://daftvaderdev.github.io/">Website</a>
+</div>
+
+<div id="Eenu" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<p>Eenu.</p>
+	<a href = "https://s3858815.github.io/COSC2196/">Website</a>
+</div>
+
+<div id="Tyson" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<p>Tyson.</p>
+	<a href = "https://s3660241.wordpress.com/">Website</a>
+</div>
+
+<div id="Wenjun" class="tabcontent">
+<div class="tab">
+	<button class="tablinks" onclick="openSection(event, 'Mitchell')">Mitchell</button>
+	<button class="tablinks" onclick="openSection(event, 'Tim')">Tim</button>
+	<button class="tablinks" onclick="openSection(event, 'Eenu')">Eenu</button>
+	<button class="tablinks" onclick="openSection(event, 'Tyson')">Tyson</button>
+	<button class="tablinks" onclick="openSection(event, 'Wenjun')">Wenjun</button>
+	</div>
+	<p>Wenjun.</p>
+	<a href = "https://michaelbye.github.io/Wenjun-s--Profile/">Website</a>
+</div>
+
+
+
+<script>
+function openSection(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+</script>
+   
+</body>
+</html> 
